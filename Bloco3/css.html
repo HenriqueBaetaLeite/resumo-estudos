@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros passos em CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <h2>Primeiros passos em CSS</h2>
+    <a href="./bloco3.html">Voltar</a>
+    <ul>
+      <li><a href="#parteI-2">Parte I</a></li>
+      <li><a href="#parteII-2">Parte II</a></li>
+      <li><a href="#parteIII-2">Parte III</a></li>
+    </ul>
+
+    <h4 id="parteI-2">Parte I</h4>
+    
+    <div>
+      <p>Criando primeiras regras com CSS</p>
+      <p style="color: blue">Os estilos servem para dar "vida" ao HTML. Podemos colocar cores, animações
+        e outras cositas mas.</p>
+      <p style="background-color: rgb(168, 241, 125);">Podemos setar esse estilos diretamente na tag, como fiz acima, ou 
+          temos a opção de criar uma tag < style > dentro do head ou também um arquivo externo .css</style>
+      </p>
+      <p id="id-da-tag">Usando seletores, podemos colocar o atributo 'id' numa tag, o valor desse id deve ser único.</p>
+      <p class="teste">na tag style, colocamos o identificador # antes do nome do id desejado (#id-da-tag), abrimos
+          chaves (#id-da-tag { color: blue;}), e lá setamos a propriedade que queremos mudar.
+      </p>
+      <p class="teste">Também podemos usar o atributo 'class' nas tags, o que diferencia é que ele pode ser usado
+          em várias tags. Dentro do style usamos o identificador . (ponto) para 'class'.
+      </p>
+    </div>
+      
+    <h4 id="parteII-2">Parte II</h4>
+    <div>
+      <p>Também conseguimos alterar estilo de fonte pelas tags, usando o nome da tag desejada para aplicar
+        determinado estilo. Todo os h4 e h2 estão com uma font-family diferente.
+      </p>
+      <p>Unidades de medida (px, em), um tanto complexo para ser relatado aqui.</p>
+      <p id="negrito">Fonts em negrito</p>
+      <p id="italico">Fonts em itálico</p>
+      <p id="centralizado">Texto centralizado</p>
+      <p>CSS Zen Garden - indicado por Gustavo Caetano - <a href="http://www.csszengarden.com/" target="_blank">Aqui</a></p>
+      <p>Formatação de texto - link do course - <a href="https://www.w3schools.com/css/css_text.asp" target="_blank">Aqui</a></p>
+    </div>
+
+    <h4 id="parteIII-2">Parte III</h4>
+    <div>
+      <p>Utilizando CSS diretamente dentro da tag, usando o atributo style.</p>
+      <p style="color: red">Esse parágrafo tem a cor alterada diretamente no atributo style.</p>
+      <p>Outra maneira, já citada acima, podemos criar outro arquivo e deixar tudo mais organizado.</p>
+      <p>Usando a tag link dentro do head, podemos selecionar a referência do arquivo desejado.</p>
+      <p>Todas as divs estão sendo estilizadas através do arquivo style.css, referenciado na tag link.</p>
+    </div>
+    <h4>Exercícios</h4>
+
+    <div>        
+      <p>Consiste nestes 2 objetivos:</p>
+      <ul>
+        <li>Estilizar seu Portfolio Web</li>
+        <li>Atualizar o GitHub pages</li>
+      </ul>
+      <p>Gerador de cores - <a href="https://coolors.co/" target="_blank">Aqui</a></p>
+    </div>
+
+    <h4>Extras e outros</h4>
+    <div>
+      <p>Links citados no course:</p>
+      <p>https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/using-the-browser-developer-tools</p>
+      <p>http://jmcglone.com/guides/github-pages/</p>
+      <p>https://www.coursera.org/learn/html-css-javascript-for-web-developers/home/welcome</p>
+      <p>https://pt.khanacademy.org/computing/computer-programming/html-css/intro-to-css/pt/css-basics</p>
+      <p>https://www.khanacademy.org/computing/computer-programming/html-css/more-ways-to-embed-css/pt/using-inline-css-styles</p>
+      
+    </div>
+
+  </section>
+  
+</body>
+</html>
