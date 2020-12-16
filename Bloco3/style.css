@@ -3,7 +3,7 @@ body {
   margin: 2;
   padding: 0;
 }
-div {
+section {
   border: 1px solid blue;
   border-radius: 8px;
 }
