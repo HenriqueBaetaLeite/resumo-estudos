@@ -4,18 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bloco 3 -HTML & CSS</title>
+    <style>
+      #id-da-tag {
+        color: white;
+        background-color: lightsalmon;
+      }
+      .teste {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 1px solid;
+      }
+    </style>
   </head>
   <body>
     <section>
       <h2>Estrutura de páginas</h2>
       <ul>
-        <li><a href="#parteI">Parte I</a></li>
-        <li><a href="#parteII">Parte II</a></li>
-        <li><a href="#parteIII">Parte III</a></li>
+        <li><a href="#parteI-1">Parte I</a></li>
+        <li><a href="#parteII-2">Parte II</a></li>
+        <li><a href="#parteIII-3">Parte III</a></li>
       </ul>
-      <h4 id="parteI">Parte I</h4>
+      <h4 id="parteI-1">Parte I</h4>
       <div>
-        <p>HTMl é um linguagem de marcação, enquanto o CSS uma linguagem de estilização</p>
+        <p>HTML é um linguagem de marcação, enquanto o CSS uma linguagem de estilização</p>
         <p>"Precursores" da internet e do HTML: Tim Berners-Lee e Robert Cailliau</p>
         <p>Principais versões do HTML:</p>
         <ul>
@@ -36,7 +46,7 @@
         >
       </div>
 
-      <h4 id="parteII">Parte II</h4>
+      <h4 id="parteII-1">Parte II</h4>
       <div>
         <h6>Estruta das tags HTML</h6>
 
@@ -70,7 +80,7 @@
         alt="homer simpson pensando">
       </div>
 
-      <h4 id="parteIII">Parte III</h4>
+      <h4 id="parteIII-1">Parte III</h4>
       <div>
         <h6>Links no HTML</h6>
         <p> tag < a > serve para redirecionar para outro link. Ela possui o atributo href que é o
@@ -115,6 +125,33 @@
 
     <section>
       <h2>Primeiros passos em CSS</h2>
+      <ul>
+        <li><a href="#parteI-2">Parte I</a></li>
+        <li><a href="#parteII-2">Parte II</a></li>
+        <li><a href="#parteIII-2">Parte III</a></li>
+      </ul>
+
+      <h4 id="parteI-2">Parte I</h4>
+      <div>
+        <p>Criando primeiras regras com CSS</p>
+      </div>
+
+      <h4 id="parteII-2">Parte II</h4>
+      <div>
+        <p style="color: blue">Os estilos servem para dar "vida" ao HTML. Podemos colocar cores, animações
+          e outras cositas mas.</p>
+        <p style="background-color: rgb(168, 241, 125);">Podemos setar esse estilos diretamente na tag, como fiz acima, ou 
+          temos a opção de criar uma tag < style > dentro do head ou também um arquivo externo .css</style>
+        </p>
+        <p id="id-da-tag">Usando seletores, podemos colocar o atributo 'id' numa tag, o valor desse id deve ser único.</p>
+        <p class="teste">na tag style, colocamos o identificador # antes do nome do id desejado (#id-da-tag), abrimos
+          chaves (#id-da-tag { color: blue;}), e lá setamos a propriedade que queremos mudar.
+        </p>
+        <p class="teste">Também podemos usar o atributo 'class' nas tags, o que diferencia é que ele pode ser usado
+          em várias tags. Dentro do style usamos o identificador . (ponto) para 'class'.
+        </p>
+      </div>
+
 
     </section>
 
