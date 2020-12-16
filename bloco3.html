@@ -10,8 +10,22 @@
         background-color: lightsalmon;
       }
       .teste {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         border: 1px solid;
+      }
+      h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h4 {
+        font-family: 'Courier New', Courier, monospace;
+      }
+      #negrito {
+        font-weight: bold;
+      }
+      #italico {
+        font-style: italic;
+      }
+      #centralizado {
+        text-align: center;
       }
     </style>
   </head>
@@ -132,26 +146,41 @@
       </ul>
 
       <h4 id="parteI-2">Parte I</h4>
+      
       <div>
         <p>Criando primeiras regras com CSS</p>
-      </div>
-
-      <h4 id="parteII-2">Parte II</h4>
-      <div>
         <p style="color: blue">Os estilos servem para dar "vida" ao HTML. Podemos colocar cores, animações
           e outras cositas mas.</p>
         <p style="background-color: rgb(168, 241, 125);">Podemos setar esse estilos diretamente na tag, como fiz acima, ou 
-          temos a opção de criar uma tag < style > dentro do head ou também um arquivo externo .css</style>
+            temos a opção de criar uma tag < style > dentro do head ou também um arquivo externo .css</style>
         </p>
         <p id="id-da-tag">Usando seletores, podemos colocar o atributo 'id' numa tag, o valor desse id deve ser único.</p>
         <p class="teste">na tag style, colocamos o identificador # antes do nome do id desejado (#id-da-tag), abrimos
-          chaves (#id-da-tag { color: blue;}), e lá setamos a propriedade que queremos mudar.
+            chaves (#id-da-tag { color: blue;}), e lá setamos a propriedade que queremos mudar.
         </p>
         <p class="teste">Também podemos usar o atributo 'class' nas tags, o que diferencia é que ele pode ser usado
-          em várias tags. Dentro do style usamos o identificador . (ponto) para 'class'.
+            em várias tags. Dentro do style usamos o identificador . (ponto) para 'class'.
         </p>
       </div>
+        
+      <h4 id="parteII-2">Parte II</h4>
+      <div>
+        <p>Também conseguimos alterar estilo de fonte pelas tags, usando o nome da tag desejada para aplicar
+          determinado estilo. Todo os h4 e h2 estão com uma font-family diferente.
+        </p>
+        <p>Unidades de medida (px, em), um tanto complexo para ser relatado aqui.</p>
+        <p id="negrito">Fonts em negrito</p>
+        <p id="italico">Fonts em itálico</p>
+        <p id="centralizado">Texto centralizado</p>
 
+      </div>
+
+      <h4 id="parteIII-2">Parte III</h4>
+      <div>
+        <p>
+          parte 3
+        </p>
+      </div>
 
     </section>
 
