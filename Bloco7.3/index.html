@@ -11,11 +11,90 @@
       <h2>JavaScript ES6 - Testes Unitários</h2>
 
       <section>
+        <p>
+          Testes unitários são porções de código responsáveis por validar o comportamento de
+          unidades funcionais de código. Nesse contexto, entende-se como unidade funcional qualquer
+          porção de código que, através de algum estímulo, seja capaz de gerar um comportamento
+          esperado. Isso inclui funções, propriedades, construtores... tudo que, de alguma maneira,
+          processe um comportamento de valor e que você deseja garantir que, apesar das alterações
+          em nível de código, o comportamento siga sendo o mesmo. Já o conceito de testar em
+          pequenos passos fala sobre como orientar nosso desenvolvimento com base nos testes!
+        </p>
+        <p>
+          Basicamente, existem três dimensões de qualidade que precisam ser consideradas: Confiança
+          : O sistema é resistente a falhas durante a execução, isto é, não entra em loop , não
+          interrompe a execução por falta de recursos. Funcionalidade : O sistema se comporta
+          conforme o que foi definido em seus requisitos. Performance : O sistema tem um tempo de
+          resposta adequado e aceitável, mesmo quando submetido a um volume de processamento próximo
+          de situações reais ou de pico. E, para atender a essas três dimensões, a pessoa que
+          desenvolve tem uma nova tarefa: desenvolver com foco em qualidade.
+        </p>
         <p>Anotações no script.js</p>
       </section>
 
+      <h4>Para que servem testes unitários?</h4>
+      <section>
+        <p>
+          Existem diversas formas que aparentemente são mais rápidas de testar se a minha função
+          está fazendo o que deveria. Eu poderia simplesmente executar o código para verificar se
+          está funcionando. Então, por que motivo eu vou escrever outro código para testar meu
+          código? O que garante que o segundo código funciona? Quem testa o teste? Testes unitários
+          , assim como qualquer teste automatizado, não servem somente para verificar se uma função
+          específica está funcionando, mas também para garantir que sua aplicação continue
+          funcionando após alguma alteração em sua base de código.
+        </p>
+      </section>
+
+      <h4>Por que escrever testes unitários?</h4>
+      <section>
+        <p>
+          Pode parecer tentador, em um primeiro momento, não escrever testes para uma função que
+          você acaba de desenvolver; afinal, costuma-se escrever mais código para testar uma função
+          que o próprio código da função. Mas você deve lembrar que irá passar a maior parte do
+          tempo de desenvolvimento de um sistema trabalhando em sua manutenção. Sua aplicação em
+          pouco tempo terá algumas centenas de funções sendo executadas, e muitas vezes executando
+          umas às outras. Sua base de código fica enorme, e logo fica humanamente impossível de ser
+          testada de forma manual após qualquer alteração. Testes unitários, na maioria das vezes,
+          levam apenas alguns segundos para testar toda a sua aplicação.
+        </p>
+      </section>
+
+      <h4>Por onde começar?</h4>
+      <section>
+        <p>
+          Existem diversas ferramentas de testes unitários para cada linguagem de programação. Você
+          pode começar lendo a documentação dessas ferramentas a partir de seus exemplos. Neste link
+          você pode encontrar algumas dessas ferramentas classificadas por linguagem. Vamos focar
+          nas ferramentas para JavaScript , pois é a linguagem que já utilizamos aqui na Trybe. E a
+          mais simples dessas ferramentas é o módulo assert do Node.JS.
+        </p>
+        <p>link: https://github.com/atinfo/awesome-test-automation</p>
+      </section>
+
       <h4>Extras e outros</h4>
-      <section></section>
+      <section>
+        <p>Exercícios se encontram no script2.js</p>
+        <p>https://mochajs.org/#installation</p>
+        <p>https://github.com/gamontal/awesome-katas</p>
+        <p>https://teamtreehouse.com/library/happy-path-vs-testing-edge-cases</p>
+        <p>
+          https://searchsoftwarequality.techtarget.com/news/1265369/Unit-testing-critical-for-improving-software-quality
+        </p>
+        <p>https://dzone.com/articles/top-8-benefits-of-unit-testing</p>
+        <p>https://kentcdodds.com/blog/when-i-follow-tdd</p>
+        <p>https://nodejs.org/api/assert.html</p>
+        <p>
+          https://blog.paulagrangeiro.com.br/1-testes-unit%C3%A1rios-entendendo-o-conceito-por-tr%C3%A1s-da-defini%C3%A7%C3%A3o-f3a4bace71c9
+        </p>
+        <p>https://agileindia.org/uploads/downloads/TDD.pdf</p>
+        <p>https://en.wikipedia.org/wiki/Test-driven_development</p>
+        <p>
+          https://technologyconversations.com/2013/12/20/test-driven-development-tdd-example-walkthrough/
+        </p>
+        <p>https://www.programmingwithwolfgang.com/tdd-kata/</p>
+        <p>https://kata-log.rocks/tdd</p>
+        <p>https://www.chaijs.com/guide/</p>
+      </section>
     </main>
   </body>
 </html>
