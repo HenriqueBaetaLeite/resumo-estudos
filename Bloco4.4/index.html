@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloco 4.4 - JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html">Objetos</a></li>
+          <li><a href="./funcoes.html">Funções</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>JavaScript - Objetos / For in</h2>
+
+      <h4>Objetos</h4>
+      <section>
+        <p>Objetos são agrupamentos, containers para variáveis, dados.</p>
+        <p>
+          const meuObjeto = { name: 'Henrique', age: 37, married: true, children: { son1: 'João',
+          son2: 'Ana', }, lastName: 'Leite', };
+        </p>
+        <p>
+          Com objetos acessamos os valores através de suas chaves, usando a notação de . (ponto) ou
+          também usando [] (colchetes).
+        </p>
+        <p>console.log(meuObjeto.name); // 'Henrique'</p>
+        <p>console.log(meuObjeto['married']); // true</p>
+        <p>Para criar uma nova chave, meuObjeto.nickName = 'Baêta';</p>
+        <p>console.log(meuObjeto.nickName); // 'Baêta'</p>
+        <p>
+          console.log(`O nome completo é ${meuObjeto.name} ${meuObjeto.lastName}.`) // O nome
+          completo é Henrique Leite.
+        </p>
+        <p>Exemplos e exercícios no script e script 2.</p>
+      </section>
+
+      <h4>For in</h4>
+
+      <section>
+        <p>O loop for in facilita percorrer um objeto.</p>
+        <p>for (let key in meuObjeto) {console.log(key, meuObjeto[key])}</p>
+        <p>// name Henrique</p>
+        <p>// age 37</p>
+        <p>// married true</p>
+        <p>// children { son1: 'João', son2: 'Ana' }</p>
+        <p>// lastName Leite</p>
+      </section>
+    </main>
+  </body>
+</html>
