@@ -70,4 +70,17 @@ assert.strictEqual(sum(4, 5), 9);
 assert.strictEqual(sum(0, 0), 0);
 
 // VAI QUEBRA!
-assert.strictEqual(sum(4, '5'), 9);
+// assert.strictEqual(sum(4, '5'), 9);
+
+const removeItem = (array, item) => {
+  const newArray = array.filter((el) => el !== item);
+  return newArray;
+};
+
+console.log(removeItem([1, 2, 3, 4], 3));
+
+assert.deepEqual(removeItem([1, 2, 3, 4], 3), [1, 2, 4]);
+
+assert.notDeepEqual(removeItem([1, 2, 3, 4], 3), [1, 2, 3, 4]);
+
+assert.deepEqual(removeItem([1, 2, 3, 4], 5), [1, 2, 3, 4]);
