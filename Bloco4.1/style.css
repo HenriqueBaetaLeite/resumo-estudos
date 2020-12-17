@@ -1,0 +1,30 @@
+body {
+  box-sizing: border-box;
+  margin: 2;
+  padding: 0;
+}
+
+section {
+  border: 1px solid blue;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+header {
+  text-align: center;
+}
+
+.span-test {
+  color: blue
+}
+
+.nav-links li {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  margin: 5px;
+}
+
+.nav-links li a {
+  color: black;
+}
