@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloco 5.4 - JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>JavaScript - Web Storage</h2>
+
+      <section>
+        <p>
+          Web Storage provê mecanismos para que as aplicações web possam salvar dados nos browsers
+          deu seus usuários.
+        </p>
+        <p>
+          Antes do HTML 5 , as aplicações tinham que salvar os dados locais em cookies, que eram
+          enviados para o servidor a cada requisição do browser . Web Storage é mais seguro e tem a
+          capacidade de salvar uma quantidade maior de dados sem afetar o desempenho da página.
+        </p>
+        <p>
+          Ao contrário dos Cookies , o limite de armazenamento é muito maior (pelo menos 5MB), e as
+          informações não são transferidas para o servidor durante as requisições.
+        </p>
+        <p>
+          Web Storage é por origem (por domínio e protocolo). Todas as páginas de uma origem podem
+          salvar e acessar os mesmos dados. Por exemplo, se o domínio betrybe.com salva o dado X no
+          Web Storage , o domínio course.betrybe.com consegue ler esse dado X .
+        </p>
+      </section>
+
+      <h4>Cookies</h4>
+      <section>
+        <p>
+          Cookies são dados salvos em pequenos arquivos de texto no computador da pessoa que utiliza
+          a Internet . Quando o servidor envia a página Web para o browser , a conexão é desligada e
+          o servidor não tem mais acesso às informações da requisição - como os items que o usuário
+          adicionou a um carrinho de compras ou o e-mail que lhe dará acesso a sua conta. Cookies
+          foram inventados para salvar dados dos usuários no próprio browser , pois, dessa forma,
+          uma página conseguirá acessá-los para executar uma lógica com os parâmetros personalizados
+          por pessoa.
+        </p>
+        <p>Restante no script.js, com códigos para manipular cookies.</p>
+      </section>
+
+      <h4>Local e Session Storage</h4>
+
+      <section>
+        <p>
+          HTML Web Storage provê dois objetos para armazenamento de dados no cliente ( browser da
+          pessoa), no formato de key/value de um modo mais intuitivo do que nos Cookies :
+          localStorage - salva os dados sem data de expiração . Os dados não serão removidos quando
+          o browser for fechado, ou seja, eles ficarão disponíveis enquanto não forem explicitamente
+          removidos.
+        </p>
+        <p>
+          É muito mais simples utilizar localStorage e sessionStorage do que Cookies , mas os
+          Cookies são enviados para o servidor a cada requisição. Dessa forma, o uso de Cookies não
+          é totalmente dispensável. Em regra geral, utilizamos Cookies quando precisamos dos dados
+          no cliente ( browser ) e no servidor. Caso contrário, utilizamos localStorage e
+          sessionStorage .
+        </p>
+      </section>
+
+      <h4>Extras e outros</h4>
+      <section>
+        <p>https://www.youtube.com/watch?v=Ahi4iYjDWOE&feature=emb_logo</p>
+        <p>https://www.youtube.com/watch?v=AwicscsvGLg</p>
+        <p>https://javascript.info/localstorage</p>
+        <p>https://javascript.info/cookie</p>
+        <p>
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
+        </p>
+        <p>
+          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+        </p>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
