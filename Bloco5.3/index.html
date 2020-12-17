@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloco 5.3 - JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>JavaScript - Eventos</h2>
+
+      <section>
+        <p>
+          Uma das funcionalidades mais poderosas do JavaScript é a capacidade de "reagir" a eventos
+          que acontecem em uma página web. Praticamente qualquer interação de quem usa com a página
+          pode ser considerada um evento. O rolar da tela , o passar do mouse por um elemento, o
+          click do mouse , o digitar do teclado , entre outros. A partir de agora, você vai aprender
+          como usar o JavaScript para criar um código que execute a partir da ocorrência desses
+          eventos, fazendo com que suas páginas se comportem dinamicamente, de acordo com as
+          interações de quem usa.
+        </p>
+      </section>
+
+      <h4>Escutador de eventos</h4>
+
+      <section>
+        <p>
+          Event listener , em inglês, tem esse nome porque é um código colocado em um elemento que
+          tem uma única razão de ser: ficar ali esperando que um evento específico ocorra (um click,
+          por exemplo) e, quando isso acontecer, executar uma função pré-determinada pelo
+          programador.
+        </p>
+
+        <p>inline event handler - uma ação causada pelo usuário.</p>
+        <p>
+          É possivel criar uma função e chamá-la diretamente no elemento, ou podemos usar o
+          addEventListener que firá escutando até que um evento seja chamado e ele execute a função
+          determinada.
+        </p>
+        <button onclick="clickMe()">Click me</button>
+        <p>Os eventos acontecem de forma assíncrona.</p>
+        <p>TODOS os elementos HTML podem receber eventos, como div's e p's.</p>
+      </section>
+
+      <h4>addEventListener</h4>
+
+      <section>
+        <p>
+          Permite a criação dinâmica de elementos e adicionar um escutador de eventos, sem
+          necessidade de incluir no HTML.
+        </p>
+        <p>
+          elemento.addEventListener('click', function() { // o que vai acontecer quando o elemento
+          for clicado};
+        </p>
+        <p>
+          elemento.addEventListener('change', function() { // o que vai acontecer quando o elemento
+          for alterado, tiver uma mudança, change.};
+        </p>
+        <p>
+          Existem outros "gatilhos" para escutadores de eventos, como passar o mouse em cima, double
+          click, quando pressiona uma tecla, ou quando solta uma tecla, scroll da tela, entre
+          outros.
+        </p>
+        <p>
+          Explicação no vídeo do course sobre o event.target, ou seja, o elemento alvo do evento
+          executado.
+        </p>
+      </section>
+
+      <h4>Extras e outros</h4>
+      <section>
+        <p>Calendário para os exercícios contidos no script.js</p>
+        <img
+          src="https://course.betrybe.com//fundamentals/javascript/dom-manipulation/gif/calendario.gif"
+          alt="calendário gif para exercícios"
+        />
+        <p>https://www.w3schools.com/js/js_htmldom_navigation.asp</p>
+        <p>https://www.w3schools.com/jsref/dom_obj_event.asp</p>
+        <p>https://codepen.io/johnatas-henrique/pen/jOEQQvZ</p>
+        <p>https://codepen.io/johnatas-henrique/pen/xxbQeOb</p>
+        <p>https://codepen.io/johnatas-henrique/pen/oNgQOoY</p>
+        <p>https://codepen.io/johnatas-henrique/pen/bGNQJXZ</p>
+        <p>https://codepen.io/johnatas-henrique/pen/jOEQovq</p>
+        <p>https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_events1</p>
+        <p>https://www.w3schools.com/js/js_htmldom_events.asp</p>
+        <p>https://medium.com/lucianobragaweb/comparar-datas-em-javascript-9b1d1febbe9a</p>
+        <p>https://pt.stackoverflow.com/questions/217881/comparar-data-atual-com-javascript?rq=1</p>
+        <p>
+          https://developer.mozilla.org/pt-BR/docs/Web/Guide/Events/criando_e_disparando_eventos
+        </p>
+        <p>https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events</p>
+        <p>https://www.w3schools.com/js/js_events_examples.asp</p>
+        <p>https://www.w3schools.com/js/js_htmldom_eventlistener.asp</p>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
