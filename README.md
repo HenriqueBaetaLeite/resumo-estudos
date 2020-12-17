@@ -2,6 +2,6 @@
 
 Resumo dos estudos na Trybe
 
-Bloco 3 iniciado dia 16 de dezembro de 2020
+Bloco 7 iniciado dia 17 de dezembro de 2020
 
-Bloco finalizado dia 16 de dezembro de 2020
+Bloco 7 finalizado dia 17 de dezembro de 2020
