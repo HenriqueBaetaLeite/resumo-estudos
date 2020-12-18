@@ -1,3 +1,9 @@
+// Salvando cookies nesta página
+
+document.cookie = 'teste=HenriqueBaetaLeite';
+
+document.cookie = 'teste2=expira em 1 semana; expires=Fri, 25 Dec 2020 12:00:00 UTC';
+
 // Cookies são salvos no formato chave-valor . Quando o navegador faz a requisição ao servidor para acessar uma página Web, os cookies dessa página são adicionados à requisição. Dessa forma, o servidor tem acesso aos dados do usuário. Nos exemplos a seguir, você irá aprender a criar e manipular cookies . Para testá-los, é importante que o seu navegador tenha o suporte a cookie habilitado. Para visualizar os cookies de uma aplicação, abra a janela para inspecionar a página. No menu superior, clique em Application e na barra lateral esquerda, na sessão Storage, clique em Cookies.
 // O Javascript permite com que a gente crie, leia e delete cookie através da propriedade document.cookie .
 // Para criar um cookie, você só precisa de atribuir à propriedade document.cookie uma string contendo o nome e o valor do que se pretende armazenar:
