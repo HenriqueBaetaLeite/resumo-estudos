@@ -2,6 +2,14 @@ cheet('i d d q d', function () {
   alert('god mode enabled');
 });
 
+$('.btn-create').click(() => {
+  $('.teste').empty();
+  $('.teste').append('<li>JQuery</li><li>rules!</li>');
+  $('.teste').addClass('m-2');
+  $('.btn-create').text('Lista Criada');
+  $('.btn-create').toggleClass('btn-dark btn-warning');
+});
+
 //
 // EXERCÍCIOS
 
