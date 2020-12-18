@@ -1,0 +1,21 @@
+@media (max-width: 600px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  section {
+    background-color: lightcyan;
+    padding: 5px;
+  }
+}
+
+section {
+  max-width: 1000px;
+  border: 1px solid;
+  padding: 5px;
+}
