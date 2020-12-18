@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloco 6.1 -HTML & CSS Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>Formulários HTML</h2>
+
+      <section>
+        <p>Uso das tags: input, button, form, textarea, select, entres outras.</p>
+        <p>
+          Para a tag input, existe o atributo type, que contém vários possibilidades, desde o texto
+          até número, assim como cor.
+        </p>
+        <p>
+          Além do atributo type para o input, existem outras centenas de propriedades que podem ser
+          usadas de acordo com a necessidade.
+        </p>
+        <p>
+          Uso a propriedade for do label em conjunto com o id do input, para dizer que a label
+          pertence àquele input.
+        </p>
+        <p>
+          Colocando a tag input (type radio ou checkbox) dentro da tag label, o "nome/descrição"
+          passa a ser clicável.
+        </p>
+        <p>
+          Caso use submissão de arquivos no formulário, utilizar a propriedade enctype com o valor
+          multipart/form-data.
+        </p>
+
+        <form action="" enctype="multipart/form-data">
+          <label for="name">Nome:</label>
+          <input
+            name="name"
+            autocomplete="off"
+            required
+            placeholder="digite seu nome "
+            id="name"
+            type="text"
+          />
+
+          <label for="color">Color</label>
+          <input name="color" id="color" type="color" />
+
+          <label for="range">Range</label>
+          <input name="range" id="range" type="range" />
+
+          <p>Choose one or more:</p>
+
+          <label for="check1"
+            ><input id="check1" name="option" type="checkbox" value="option1" />Option1</label
+          >
+          <input id="check2" name="option" type="checkbox" value="option2" />Option2
+          <input id="check3" name="option" type="checkbox" value="option3" />Option3
+
+          <p>Choose one option:</p>
+
+          <input type="radio" name="state" id="sp" />SP
+          <input type="radio" name="state" id="mg" checked />MG
+          <label for="rj"><input type="radio" name="state" id="rj" />RJ </label>
+
+          <p>Choose one option:</p>
+
+          <select name="capital" id="capital">
+            <option value="sp">São Paulo</option>
+            <option value="bh">Belo Horizonte</option>
+            <option value="rj">Rio de Janeiro</option>
+          </select>
+
+          <p>Arquivo:</p>
+          <input type="file" name="file" id="file" />
+
+          <br />
+
+          <textarea name="super-text" id="super-text" cols="30" rows="10"></textarea>
+
+          <button type="button">Enviar</button>
+        </form>
+      </section>
+
+      <h4>Extras e outros</h4>
+      <section>
+        <p>https://www.w3schools.com/html/html_form_attributes.asp</p>
+        <p>https://www.w3schools.com/html/html_form_input_types.asp</p>
+        <p>
+          https://www.freecodecamp.org/news/a-step-by-step-guide-to-getting-started-with-html-forms-7f77ae4522b5/
+        </p>
+        <p>https://www.w3schools.com/howto/howto_css_register_form.asp</p>
+      </section>
+    </main>
+  </body>
+</html>
