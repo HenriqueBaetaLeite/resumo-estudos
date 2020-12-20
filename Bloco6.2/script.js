@@ -11,6 +11,10 @@ $('.btn-create').click(() => {
   $('.btn-create').attr('disabled', true);
 });
 
+const divs = $('section');
+
+console.log(divs[1]);
+
 //
 // EXERCÍCIOS
 
