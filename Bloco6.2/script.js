@@ -8,6 +8,7 @@ $('.btn-create').click(() => {
   $('.teste').addClass('m-2');
   $('.btn-create').text('Lista Criada');
   $('.btn-create').toggleClass('btn-dark btn-warning');
+  $('.btn-create').attr('disabled', true);
 });
 
 //

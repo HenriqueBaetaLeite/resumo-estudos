@@ -10,6 +10,7 @@
   <body>
     <main class="container p-2">
       <h2>Frameworks e Bibliotecas - JavaScript & CSS</h2>
+      <small>Usando nesta paǵina: Bootstrap, JQuery e Cheet.js</small>
 
       <section class="card mt-3 mb-3 p-2">
         <p>Bibliotecas são códigos reutilizáveis, como funções e outros.</p>
@@ -39,7 +40,74 @@
 
       <h4>Testes com JQuery</h4>
       <section class="card mt-3 mb-3 p-2">
+        <p>
+          Para acessar um elemento basta usar $('.nome-da-class')... Daí podemos escolher o tipo de
+          "manipulação", seja adicionar um texto, adicionar uma classe, id, atributo, entre outras
+          opções.
+        </p>
+        <p>Alguns exemplos:</p>
+        <ul>
+          <li>$('#meu-id')</li>
+          <li>$('.minha-classe')</li>
+          <li>$('p') - Seleciona todas as tags p encontradas</li>
+          <li>$('p.intro') - Seleciona todas as tags p com a classe "intro"</li>
+          <li>$('[href]') - Seleciona todos os elementos que tenham o atributo/propriedade href</li>
+          <li>
+            $('h2[data-testid="title-test"]') - Seleciona todos os h2 que tenham o data-testid igual
+            a title-test
+          </li>
+          <li>
+            $('#myId').attr('width', '500') - Seleciona o elemento com o id myId e seta o width para
+            500px
+          </li>
+          <li>
+            $(selector).attr({ data-testid: 1, required:true, ... } - Através de um objeto consigo
+            setar vários atributos de vez só)
+          </li>
+          <li>
+            $(selector).attr('id') - Passando apenas 1 argumento, retorna o atributo id do seletor.
+          </li>
+          <li>
+            $(selector).text() .html() .val() - Esses 3 métodos retornam ou setam o texto, conteúdo
+            do elemento HTML e o valor de campos de formulário (inputs).
+          </li>
+          <li>
+            $(selector).text('Hello World') - Passando parâmetro para o método ele seta o que foi
+            passado.
+          </li>
+          <li>
+            Esses métodos recebem como segundo (opcional) parâmetro uma callback, com 2 parâmetros:
+            o index do atual elemento e o original (antigo) valor.
+          </li>
+          <li>Outros 2 métodos bem utilizados são o .append() e o prepend().</li>
+          <li>$(selector).append('Algum texto...') - Eu insiro um texto no final do seletor.</li>
+          <li>$(selector).prepend('outro texto') - Insiro outro texto no início do seletor.</li>
+          <li>Métodos de remoção:</li>
+          <li>
+            $(selector).remove() .empty() .hide() .show() - Remove: remove o elemento e seus filhos;
+            empty: remove os filhos do elemento; hide: esconde os filhos do elemento, show: mostra
+            os filhos do elemento.
+          </li>
+          <li>Métodos para manipulação de CSS:</li>
+          <li>
+            $(selector).addClass() .removeClass() .toggleClass() - adiciona a classe, remove a
+            classe, se tiver a classe remove, se não tiver adiciona.
+          </li>
+          <li>
+            $('#meu-id').css('background-color') - Retorna o valor do background-color do seletor ou
+            o primeiro encontrado.
+          </li>
+        </ul>
+        <p>
+          Existem outras dezenas ou centenas de métodos, para eventos, selecionar parentes, efeitos
+          e até animação, entre outros.
+        </p>
         <p>Usando JQuery</p>
+        <p>
+          Neste botão um exemplo de $(selector).toggleClass('btn-dark btn-warning'), retiro a clsse
+          btn-dark e adiciono a btn-warning, se o botão não ficasse desabilitado, cada hora teria
+          uma cor, por conta do toggle.
+        </p>
         <button class="btn btn-dark btn-create">Criar uma lista</button>
         <ul class="teste"></ul>
       </section>
